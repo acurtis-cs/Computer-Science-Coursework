@@ -8,12 +8,14 @@ Coursework is organized by class. Each class has its own folder containing assig
 
 ## Current Structure:
 
+```text
 computer-science-coursework-Respository/
 ├── CS300_Client-Side-Web-Development/
 ├── CS308_Operating-Systems/
 |   └──Assignment2/
 ├── .gitignore
 └── README.md
+```
 
 ## Languages and Technologies
 
