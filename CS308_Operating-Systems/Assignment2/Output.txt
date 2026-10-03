@@ -1,0 +1,23 @@
+Thread Name: Thread_1
+File Name: Input1.csv
+The Maximum Salary: 99998.0
+The Minimum Salary: 50004.0
+The Average Salary: 75100.2413
+The task was concluded: 2026-10-03T16:21:49.901861400
+
+Thread Name: Thread_3
+File Name: Input3.csv
+The Maximum Salary: 99980.0
+The Minimum Salary: 50000.0
+The Average Salary: 74823.8588
+The task was concluded: 2026-10-03T16:21:49.905861600
+
+Thread Name: Thread_2
+File Name: Input2.csv
+The Maximum Salary: 99999.0
+The Minimum Salary: 50000.0
+The Average Salary: 74890.7314
+The task was concluded: 2026-10-03T16:21:49.905861600
+
+This summary was completed using three parallel threads.
+This work was done by: Alex Curtis ID#000742889
