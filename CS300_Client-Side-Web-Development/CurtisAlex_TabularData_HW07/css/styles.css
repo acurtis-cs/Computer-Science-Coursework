@@ -1,6 +1,9 @@
 body{
     margin: 0;
-    min-width: 1300px
+    min-width: 1300px;
+    font-family: sans-serif;
+    background-color: black;
+
 }
 
 .pageWidth{
@@ -12,7 +15,11 @@ body{
 
 /*TOP SECTION*/ 
 #top{
-    padding-bottom: 100px;
+    padding-bottom: 75px;
+    
+}
+#top p{
+    font-weight: 800;
 }
 
 .topBar{
@@ -51,6 +58,7 @@ body{
     width: 1200px;
     margin: 0 auto;
     clear: both;
+   
 }
 
 #workoutTable{
@@ -58,17 +66,17 @@ body{
     border-collapse: collapse;
 }
 
-#workoutTable th,
-#workoutTable td{
-    border: 2px solid black;
-}
+
 
 /* color background */
 #workoutTable tr:first-of-type{
     background: yellow;
+    border: 3px solid black;
+    
 }
 
-.info{
+.info, 
+.info1{
     background: beige;
 }
 .infoRed{
@@ -80,6 +88,10 @@ body{
 .infoLightPink{
     background: lightpink;
 }
+.infoWhite,
+.infoWhite1{
+    background: white;
+}
 .blue{
     color: rgb(2, 102, 253);
     font-style: italic;
@@ -90,7 +102,8 @@ body{
     text-align: left;
 }
 
-.rightText{
+.rightText,
+.rightText2 {
     text-align: right;
 }
 
@@ -101,7 +114,7 @@ body{
 
 /* WIDTH of cells */
 .width1{
-    width: 200px;
+    width: 190px;
 }
 .width2{
     width: 150px;
@@ -111,4 +124,75 @@ body{
 }
 .space{
     width: 300px;
+}
+
+
+/*  Making Boards match image  */
+
+.infoLightPink{
+    border-top: 2px dotted black;
+    border-bottom: 2px solid black;
+}
+
+.info1,
+.space,
+.middleText,
+.infoRed,
+.infoWhite1 {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.info1 td,
+.sides,
+.space,
+.middleText {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.rightText,
+.infoWhite1 td,
+.infoWhite td,
+.infoRed td,
+.infoGrey td,
+.infoLightPink td {
+    border-right: 2px solid black;
+}
+
+
+.leftText,
+.rightText2{
+    border-right: 1px solid darkgrey !important; /*Without me having to make another class, !important over rides parent instrucitons.*/
+    border-left: 2px solid black;
+}
+
+
+#spooky{
+    color: White
+}
+
+#spookyimage{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-image: url("../images/spooktober.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#spookyImage:hover{
+    background-image: url("../images/intense.png");
+}
+
+footer{
+    text-align: right;
+    margin-top: 100px;
+    padding: 20px 0;
+    color: white;
+}
+
+footer p{
+    margin: 5px 0;
 }
