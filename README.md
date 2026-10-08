@@ -11,7 +11,7 @@ Coursework is organized by class. Each class has its own folder containing assig
 ```text
 computer-science-coursework-Respository/
 ├── CS300_Client-Side-Web-Development/
-|   ├──AlexCUrtis-WebPage
+|   ├──AlexCUrtis-WebPage/
 |   └──CurtisALex_TabularDAta_HW07/
 ├── CS308_Operating-Systems/
 |   └──Assignment2/
