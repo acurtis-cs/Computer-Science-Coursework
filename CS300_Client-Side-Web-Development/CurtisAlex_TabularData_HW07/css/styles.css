@@ -167,14 +167,14 @@ body{
     border-left: 2px solid black;
 }
 
-
+/* IMAGE SPOOKTOBER */
 #spooky{
     color: White
 }
 
 #spookyimage{
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     margin: 0 auto;
     background-image: url("../images/spooktober.png");
     background-size: contain;
@@ -186,6 +186,8 @@ body{
     background-image: url("../images/intense.png");
 }
 
+
+/* FOOTER */
 footer{
     text-align: right;
     margin-top: 100px;
@@ -194,5 +196,5 @@ footer{
 }
 
 footer p{
-    margin: 5px 0;
+    margin: 5px 20px 5px 0px;
 }
