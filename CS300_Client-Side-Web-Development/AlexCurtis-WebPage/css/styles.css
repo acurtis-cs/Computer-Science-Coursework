@@ -1,0 +1,372 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+header{
+    width: 100%;
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 72px;
+    color: black
+}
+
+
+nav{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+nav a{
+    display: flex;
+    padding: 6px;
+    margin: 3px;
+    background: lightpink;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+nav a:hover{
+    background: darkgreen;
+    color: white;
+}
+nav a.active{
+    background: #c2185b;
+    color: white;
+}
+
+/* MEDIUM AND SMALL SCREENS */
+@media (max-width: 999px){
+    header h1{
+        font-size: 48px;
+    }
+}
+
+/* SMALL SCREENS */
+@media (max-width: 599px){
+    header h1{
+        font-size: 36px;
+        top: 35%;
+    }
+
+    header nav{
+        top: 66%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav a{
+        display: inline-block;
+        padding: 5px;
+    }
+    
+}
+
+
+.stripe{
+    width: 100%;
+    height: 50px;
+}
+.stripeBlack{
+    background: black;
+    width: 100%;
+    height: 25px;
+}
+
+.blue{
+    background: lightblue;
+}
+
+.yellow{
+    background: #EEE8AA;
+}
+
+
+
+
+
+/* LOGOS */
+
+#logos{
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+.logo{
+    float: left;
+    margin: 10px 1%;
+    text-align: center;
+    height: 300px;
+    line-height: 300px;
+}
+
+.logo img{
+    max-width: 85%;
+    max-height: 200px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.logo1 img{
+    max-width: 60%;
+    max-height:150px;
+}
+
+.logo2 img{
+    max-width: 90%;
+    max-height: 280px;
+    border-style: ridge;
+    border-width: 4px;
+    border-color: #ccc;
+}
+
+.logo3 img{
+    max-width: 80%;
+}
+
+
+
+/* Large screens */
+@media (min-width: 1000px){
+    .logo{
+        height: 400px;
+        line-height: 400px;
+    }
+
+    .logo2 img{
+        max-height: 450px;
+        max-width: 95%;
+    }
+}
+/*medium screens */
+@media (min-width: 600px){
+    .logo{
+        width: 31.33%;
+    }
+    
+}
+
+/* Small screens */
+@media (max-width: 599px){
+    .logo{
+        width: 98%;
+        height: auto;
+        line-height: normal;
+    }
+}
+
+
+/* COLOR &  MAIN */
+
+/* THREE COLOR BACKGROUND */
+
+#threeColor{ /* covers the whole background blue */
+    width: 100%;
+    background: lightblue;
+}
+
+#rightColor{ /* my yellow right side but it's in blue, so claiming 72% from right by pushing right 28% with margin*/
+    width: 72%;
+    margin-left: 28%;
+    padding: 0;
+    background: #EEE8AA;
+}
+
+#middleContent{ /* my middle content but it's in yellow, so claiming 61.11% with 0 margin keeps me left. 61.11% leaves 28% total web page space on the right side for yellow matching blue*/
+    width: 61.11%;
+    margin: 0;
+    padding: 0;
+    background: #e2e3e5;
+}
+
+#about{
+    padding: 25px;
+}
+
+#about h2{
+    margin-top: 470px;
+    font-size: 36px;
+    color: darkblue;
+    border-bottom: solid;
+    width:160px;
+}
+
+#about h3{
+    font-size: 24px;
+    color: blue;
+    border-bottom: 2px dashed yellow;
+}
+#about p{
+    font-size: 18px;
+    padding: 10px 10px;
+    line-height: 1.8;
+}
+/* EDUCATION PAGE ONLY */
+
+.educationPage #about h2{
+    margin-top: 0px;
+    font-size: 36px;
+    color: red;
+    border-bottom: dashed;
+    width:160px;
+    text-align: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.educationPage #about h3{
+    font-size: 24px;
+    margin-left: 10px;
+    color: darkred;
+    border-bottom: 3px dotted black;
+}
+
+.educationPage #about p{
+    font-size: 18px;
+    padding: 2px 20px;
+    margin-left: 10px;
+    line-height: .5;
+    color: darkblue;
+}
+.educationPage #about ul{
+    font-size: 18px;
+    padding: 2px 20px;
+    margin-left: 70px;
+    color: black;
+}
+
+.educationPage #about p:hover{
+    font-size: 20px;
+    color: blueviolet;
+    letter-spacing: 4px;
+}
+
+.educationPage #about li:hover{
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: rgb(252, 4, 4);
+}
+
+@media (min-width: 600px){
+    .educationPage .logo{
+        height: 240px;
+        line-height: 240px;
+    }
+}
+
+
+
+/* MEDIUM SCREENS */
+
+@media (min-width: 600px) and (max-width: 999px){
+    #rightColor{
+        width: 90%;
+        margin-left: 10%;
+    }
+
+    #about h2{
+        margin-top: 0px;
+    }
+
+    #middleContent{
+        width: 88.89%;
+    }
+    
+}
+
+/* SMALL SCREENS */
+
+@media (max-width: 599px){
+    #rightColor{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #about h2{
+        margin-top: 0px;
+    }
+
+    #middleContent{
+        width: 100%;
+    }
+}
+
+/* FOOTER */
+footer{
+    clear: both;
+    width: 100%;
+    background: rgb(58, 54, 54);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer h3{
+    font-size: 26px;
+    color: white;
+}
+
+#socialLinks a{
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 5px;
+    background: lightblue;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+#socialLinks a:hover{
+    background: #EEE8AA;
+    color: lightblue;
+    letter-spacing: 2px;
+}
+
+footer p{
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+ 
+
+
+#scrollBtn{
+	position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    z-index: 10;
+}
+#scrollBtn:hover{
+    background: #c2185b;;
+}
+
+#scrollBtn a{
+	color: white;
+	text-decoration: none;
+}
+
+
+
