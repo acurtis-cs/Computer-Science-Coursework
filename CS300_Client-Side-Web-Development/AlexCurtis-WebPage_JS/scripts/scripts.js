@@ -52,8 +52,25 @@ function updateDateTime() {
 
 }
 
-// Display immediately when page loads
+// Activates once page loads
 updateDateTime();
 
-// Update every second
+// Active time clock
 setInterval(updateDateTime, 1000);
+
+
+
+
+// PHOTO GALLERY
+
+$(".travelPhoto").click(function(){
+
+    var photo = $(this).attr("src");
+    var caption = $(this).attr("alt");
+
+    $("#mainPhoto").attr("src", photo);
+    $("#mainPhoto").attr("alt", caption);
+
+    $("#photoCaption").text(caption);
+
+});
