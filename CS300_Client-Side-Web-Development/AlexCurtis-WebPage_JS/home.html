@@ -1,11 +1,11 @@
 <html>
 	<head>
-		<title>Alex Curtis - HW Personal Homepage</title>
+		<title>Alex Curtis - HW Personal Page JS</title>
 		<link rel="shortcut icon" href="images/favicon.ico">
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/fonts.css">
 
-		<meta name="description" content="Alex Curtis Personal Homepage Assignment">
+		<meta name="description" content="Alex Curtis Personal Homepage with JavaScript Assignment">
 
 		<meta name="keywords" content="html, css, web development, neiu, Alex Curtis">
 	</head>
@@ -22,6 +22,10 @@
                 <a href="work.html">Work / Skills</a>
                 <a href="education.html">Education</a>
             </nav>
+            <div id="dateTime">
+                <div id="date"></div>
+                <div id="time"></div>
+            </div>
 
         </header>
         <section id="logos">
@@ -45,24 +49,28 @@
                         <h2>About Me</h2>
                         <h3>Demographics &amp; Psychographics</h3>
                         <!--Lived-->
-                        <img
-                        src="https://flagcdn.com/w40/cu.png"
-                        srcset="https://flagcdn.com/w80/cu.png 2x"
-                        width="40"
-                        height="27"
-                        alt="Cuba">
-                        <img
-                        src="https://flagcdn.com/w40/de.png"
-                        srcset="https://flagcdn.com/w80/de.png 2x"
-                        width="40"
-                        height="27"
-                        alt="Germany">
-                        <img
-                        src="https://flagcdn.com/w40/us.png"
-                        srcset="https://flagcdn.com/w80/us.png 2x"
-                        width="40"
-                        height="27"
-                        alt="United States">
+                        <div class="flagLived">
+                            <img
+                            src="https://flagcdn.com/w40/cu.png"
+                            srcset="https://flagcdn.com/w80/cu.png 2x"
+                            width="40"
+                            height="27"
+                            alt="Cuba">
+                            <img
+                            src="https://flagcdn.com/w40/de.png"
+                            srcset="https://flagcdn.com/w80/de.png 2x"
+                            width="40"
+                            height="27"
+                            alt="Germany">
+                            <img
+                            src="https://flagcdn.com/w40/us.png"
+                            srcset="https://flagcdn.com/w80/us.png 2x"
+                            width="40"
+                            height="27"
+                            alt="United States">
+                        </div>
+
+                        <p id="flagInfo">Click a flag to see where I've lived!</p>
                         <p>
                             I was born in 1995, making me 31 years old currently. I have a fiancée where we live together in an apartment out in the suburbs.
                             Due to my past career, I had the prillivege of living in two other countries besieds USA <strong>(Flags Above)</strong>. I'm currently working full time as a 
@@ -243,6 +251,8 @@
                                     alt="Northern Mariana Islands">
                             </div>
                         </div>
+
+                        <p id="travelInfo">Click a flag to see where I've traveled!</p>
                         
                         <p>
                             I had the prillivege of traveling to many other countries in my life <strong>(Flags Above)</strong>. 
@@ -277,7 +287,8 @@
 			<a href="#top">TOP</a>
 		</div>
 
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="scripts/scripts.js"></script>
     </body>
 
 

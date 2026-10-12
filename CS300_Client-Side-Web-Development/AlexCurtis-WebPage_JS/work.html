@@ -1,11 +1,11 @@
 <html>
 	<head>
-		<title>Alex Curtis - HW Personal Homepage</title>
+		<title>Alex Curtis - HW Personal Work JS</title>
 		<link rel="shortcut icon" href="images/favicon.ico">
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/fonts.css">
 
-		<meta name="description" content="Alex Curtis Personal Homepage Assignment">
+		<meta name="description" content="Alex Curtis Personal Homepage with JavaScript Assignment">
 
 		<meta name="keywords" content="html, css, web development, neiu, Alex Curtis">
 	</head>
@@ -23,6 +23,11 @@
                 <a href="education.html">Education</a>
             </nav>
 
+            <div id="dateTime">
+                <div id="date"></div>
+                <div id="time"></div>
+            </div>
+
         </header>
         <div id="threeColor">
             <div id="rightColor">
@@ -30,51 +35,54 @@
 
                     <section id="about">
                         <h2>Work Experience</h2>
-                        <h3>Prin Coord, Security Operations Specialist - Capital One</h3>
-                        <h4>2026 - Present</h4>
-                        <ul>
-                            <li>Monitor security alarms, surveillance systems, and intelligence resources to identify and assess potential threats across corporate and retail facilities.</li>
-                            <li>Assess and document security incidents, including threat evaluations, response actions, and incident outcomes.</li>
-                            <li>Coordinate critical incident communications with internal stakeholders, security personnel, and emergency responders.</li>
-                            <li>Monitor emerging risks and security events that may impact employee safety, retail operations, and corporate assets.</li>
-                            <li>Support access control operations, security system troubleshooting, and emergency response procedures.</li>
-                        </ul>
-
-                        <h3>Flex Officer - Allied Universal (Post: Discover Bank HQ)</h3>
-                        <h4>2024 - 2026</h4>
-                        <ul>
-                            <li>Conducted preliminary investigations, gathered information, and prepared incident reports.</li>
-                            <li>Operated and tested security equipment and systems to support daily operations.</li>
-                            <li>Oversaw shift operations, maintained daily reports, and briefed stakeholders on security matters.</li>
-                            <li>Coordinated with law enforcement and emergency services as the primary site liaison.</li>
-                        </ul>
-                       
-                        
-                        <h3>Military Police Investigator Assistant Manager - U.S. Army</h3>
-                        <h4>2021 - 2023</h4>
-                        <ul>
-                            <li>Supervised 6 - 8 investigators at the United States Disciplinary Barracks, a maximum-security correctional facility.</li>
-                            <li>Oversaw 50+ investigations monthly, reviewing case documentation for accuracy, timely completion, and procedural compliance.</li>
-                            <li>Collected evidence, conducted interviews and interrogations, and coordinated with federal, state, and local agencies.</li>
-                            <li>Delivered monthly risk management briefings and coordinated investigative operations across departments.</li>
-                            <li>Prepared comprehensive investigative case files for attorneys, contributing to successful criminal prosecutions and convictions.</li>
-                            <li>Served as Primary Evidence Custodian, maintaining chain of custody and safeguarding sensitive evidence.</li>
-                        </ul>
-
-                        <h2>Skills</h2>
-                        <h3>Computer</h3>
+                        <h3 class="clickTitle">Prin Coord, Security Operations Specialist - Capital One ▼</h3>
+                        <div class="hiddenInfo">
+                            <h4>2026 - Present</h4>
                             <ul>
+                                <li>Monitor security alarms, surveillance systems, and intelligence resources to identify and assess potential threats across corporate and retail facilities.</li>
+                                <li>Assess and document security incidents, including threat evaluations, response actions, and incident outcomes.</li>
+                                <li>Coordinate critical incident communications with internal stakeholders, security personnel, and emergency responders.</li>
+                                <li>Monitor emerging risks and security events that may impact employee safety, retail operations, and corporate assets.</li>
+                                <li>Support access control operations, security system troubleshooting, and emergency response procedures.</li>
+                            </ul>
+                        </div>
+                        <h3 class="clickTitle">Flex Officer - Allied Universal (Post: Discover Bank HQ) ▼</h3>
+                        <div class="hiddenInfo">
+                            <h4>2024 - 2026</h4>
+                            <ul>
+                                <li>Conducted preliminary investigations, gathered information, and prepared incident reports.</li>
+                                <li>Operated and tested security equipment and systems to support daily operations.</li>
+                                <li>Oversaw shift operations, maintained daily reports, and briefed stakeholders on security matters.</li>
+                                <li>Coordinated with law enforcement and emergency services as the primary site liaison.</li>
+                            </ul>
+                       </div>
+                        
+                        <h3 class="clickTitle">Military Police Investigator Assistant Manager - U.S. Army ▼</h3>
+                        <div class="hiddenInfo">
+                            <h4>2021 - 2023</h4>
+                            <ul>
+                                <li>Supervised 6 - 8 investigators at the United States Disciplinary Barracks, a maximum-security correctional facility.</li>
+                                <li>Oversaw 50+ investigations monthly, reviewing case documentation for accuracy, timely completion, and procedural compliance.</li>
+                                <li>Collected evidence, conducted interviews and interrogations, and coordinated with federal, state, and local agencies.</li>
+                                <li>Delivered monthly risk management briefings and coordinated investigative operations across departments.</li>
+                                <li>Prepared comprehensive investigative case files for attorneys, contributing to successful criminal prosecutions and convictions.</li>
+                                <li>Served as Primary Evidence Custodian, maintaining chain of custody and safeguarding sensitive evidence.</li>
+                            </ul>
+                        </div>
+                        <h2>Skills</h2>
+                        <h3 class="clickTitle">Computer ▼</h3>
+                            <ul class="hiddenInfo">
                                 <li>HTML and CSS</li>
                                 <li>Java and Python</li>
                                 <li>Git and GitHub</li>
                             </ul>
-
-                        <h3>Work</h3>
-                            <ul>
+                        
+                        <h3 class="clickTitle">Work ▼</h3>
+                            <ul class="hiddenInfo">
                                 <li>Security Operations</li>
                                 <li>Investigations and Incident Reporting</li>
                             </ul>
-  
+            
                     </section>
 
                 </main>
@@ -94,6 +102,9 @@
         <div id="scrollBtn">
 			<a href="#top">TOP</a>
 		</div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="scripts/scripts.js"></script>
 
 
     </body>

@@ -452,3 +452,58 @@ footer p{
 
 
 
+/* JavaScript */
+.hiddenInfo {
+    display: none;
+}
+
+.clickTitle {
+    cursor: pointer;
+}
+
+.clickTitle:hover {
+    background-color: lightblue;
+}
+
+.educationPage .clickTitle:hover {
+    background-color: lightcoral;
+}
+
+
+/* home javascript */
+
+.flagLived img, .flagGroup img {
+    cursor: pointer;
+}
+
+#flagInfo, #travelInfo {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50px;
+    background: lightcyan;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+
+/* DATE AND TIME JAVASCRIPT  */
+
+#dateTime {
+    position: absolute;
+    right: 20px;
+    top: 6px;
+    text-align: right;
+}
+
+#date {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+#time {
+    font-size: 13px;
+    margin-top: 5px;
+    color: black;
+}
