@@ -12,7 +12,7 @@ body {
     
 }
 
-/* NAV HEADER SCROLL */
+/* --------------------------------------NAV HEADER SCROLL */
 
 nav {
     width: 100%;
@@ -25,9 +25,11 @@ nav {
 
 /* top protion of nav */
 #navTop {
-    width: 100%;
+    width: 85%;
     position: relative;
+    max-width: 1200px;  /* line up with product gird */
     padding: 8px 0;
+    margin: 0 auto;
 }
 
 #navLogo {
@@ -37,27 +39,27 @@ nav {
 }
 
 #navLogo img {
-    width: 175px;
+    width: 150px;
     max-width: 100%;
     height: auto;
 }
 
 #navRight {
     position: absolute;
-    right: 5%;
+    right: 0; /* now due to that sapce reduction to match grid words can hang soild right */
     top: 30%;
     transform: translateY(-50%);
     display: flex;
     align-items: center;
-    gap: 20px;
-    font-size: 14px;
+    gap: 5px;
+    font-size: 13px;
 }
 #language:hover {
     color: black;
 }
 
 #navRight img {
-    width: 40px;
+    width: 35px;
     height: auto;
 }
 
@@ -65,13 +67,13 @@ nav {
 #navLinks {
     width: 100%;
     text-align: center;
-    padding: 10px 0 12px;
+    padding: 16px 0 0 0;
 }
 
 #navLinks a {
-    font-size: 15.5px;
+    font-size: 13px;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 8px;
     color: rgb(0, 153, 255);
 }
 
@@ -83,14 +85,14 @@ nav {
     color: rgb(0, 153, 255);
 }
 
-/* BANNER  */
+/* --------------------------------------BANNER  */
 #banner {
     width: 100%;
 }
 
 #banner img {
     width: 100%;
-    height: auto;
+    max-height: 412px;
     display: block;
 }
 #banner .summerSmall {
@@ -102,18 +104,110 @@ nav {
     width: 100%;
     background-color: cornflowerblue;
     overflow: hidden;
-    padding: 12px 0;
+    padding: 9px 0;
 }
 
 #textBanner p {
     color: rgb(236, 172, 53);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin: 0;
     white-space: nowrap;
     text-align: center;
     text-decoration: bold;
 }
+
+
+
+/* -------------------------------------PRODUCTS WITH GRID */
+
+#products {
+    width: 85%;
+    margin: 40px auto;
+    max-width: 1200px;
+    color: rgb(0, 153, 255);
+}
+
+#productsHeading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#productsHeading h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+#productsHeading a {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(0, 153, 255);
+}
+
+.productInfo {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.productInfo p {
+    margin: 0 0 4px;
+}
+
+/* Grid reponse layout*/
+#productsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 8px;
+}
+
+.product {
+    min-width: 0;
+}
+
+/* border and visibilty flip for product images */
+.productImage {
+    width: 100%;
+    position: relative;
+    border: 1px solid rgb(0, 153, 255);
+}
+
+.productImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.productImage .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: none;
+}
+
+.productImage:hover .front {
+    visibility: hidden;
+}
+
+.productImage:hover .back {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -156,15 +250,11 @@ nav {
     }
 
     #navRight {
-        right: 3%;
+        right: 0;
         gap: 10px;
         font-size: 12px;
     }
 
-    #navRight {
-        right: 3%;
-        gap: 10px;
-    }
 
     #navLinks {
         padding: 8px 12px;
@@ -173,8 +263,8 @@ nav {
 
     #navLinks a {
         display: inline-block;
-        font-size: 12px;
-        margin: 5px 6px;
+        font-size: 10px;
+        margin: 5px 4px;
     }
 
     /* Banner section */
@@ -185,5 +275,12 @@ nav {
 
     #banner .summerSmall {
         display: block;
+    }
+
+
+
+    /* PRODUCT GRID */
+    #productsGrid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
