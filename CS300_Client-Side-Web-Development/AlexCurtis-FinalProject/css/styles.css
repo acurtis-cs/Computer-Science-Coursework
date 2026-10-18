@@ -317,7 +317,7 @@ footer {
 
 
 
-/*  OUT-OF-JAM.HTML CSS SPECIFIC SECTION  */
+/*  *******OUT-OF-JAM.HTML CSS SPECIFIC SECTION********  */
 
 
 /* --------------------------------- Jam Product*/
@@ -474,6 +474,155 @@ footer {
 }
 
 
+/* ----------------------------------------------- JAM BANNER */
+
+#jamBanner {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+#jamBanner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------------------------------- JAM WORDS */
+
+.jamWords {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 140px 0;
+    text-align: center;
+    color: rgb(0, 153, 255);
+}
+
+.jamWords h2 {
+    font-size: 48px;
+    margin: 0 0 25px;
+}
+
+.jamWords p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0 auto 18px;
+}
+
+/* ---------------------------- JAM PHOTOS */
+
+#jamPhotos {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+#jamPhotos img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* --------------------------------------- JAM FAQ */
+
+#jamFAQ {
+    width: 85%;
+    max-width: 1200px;
+    margin: 70px auto;
+    color: rgb(0, 153, 255);
+}
+
+#jamFAQ h2 {
+    font-size: 30px;
+    margin: 0 0 20px;
+}
+
+/* Each question fall under thier own faqItem */
+.faqItem {
+    border-top: 1px solid rgb(0, 153, 255);
+}
+
+/* Bottom border of last faqItem */
+.faqItem:last-child {
+    border-bottom: 1px solid rgb(0, 153, 255);
+}
+
+/* Question row */
+.faqQuestion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: none;
+    border: none;
+    padding: 15px 0;
+
+    color: rgb(0, 153, 255);
+    font-size: 14px;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Answer section */
+.faqAnswer {
+    font-size: 13px;
+    line-height: 1.7;
+    padding-bottom: 12px;
+}
+
+.faqAnswer p {
+    margin: 0 0 12px;
+}
+
+.faqAnswer p:last-child {
+    margin-bottom: 0;
+}
+
+/* Creating arrow pointing up */
+.faqArrow {
+    width: 7px;
+    height: 7px;
+
+    border-right: 1.5px solid rgb(0, 153, 255);
+    border-bottom: 1.5px solid rgb(0, 153, 255);
+
+    transform: rotate(-135deg);
+    margin-right: 4px;
+    flex-shrink: 0;
+}
+
+/* Color hover change for faqQuestion and faqArrow */
+.faqQuestion:hover {
+    color: black;
+}
+.faqQuestion:hover .faqArrow {
+    border-color: black;
+}
+
+/* Prepping for JS code But not in HTML currently BELOW */
+/* Closed FAQ item */
+.faqItem.closed .faqAnswer {
+    display: none;
+}
+
+/* Turn arrow down when closed */
+.faqItem.closed .faqArrow {
+    transform: rotate(45deg);
+}
+/* Prepping for JS code But not in HTML currently ABOVE*/
+
+
+
+
+
+
+
+
+
 
 
 
@@ -595,6 +744,18 @@ footer {
         width: 94%;
         grid-template-columns: 1fr 1.1fr;
         gap: 18px;
+    }
+
+    #jamBanner {
+        width: 94%;
+    }
+
+    #jamPhotos {
+        width: 94%;
+    }
+
+    #jamFAQ {
+        width: 94%;
     }
 
 }
