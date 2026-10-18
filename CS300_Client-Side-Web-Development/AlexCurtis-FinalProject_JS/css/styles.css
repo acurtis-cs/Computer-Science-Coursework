@@ -1,0 +1,899 @@
+
+body {
+    background-color: white;
+}
+
+#top {
+   margin-top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(0, 153, 255);
+
+}
+
+/* --------------------------------------NAV HEADER SCROLL */
+
+nav {
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    color: rgb(0, 153, 255);
+}
+
+/* top protion of nav */
+#navTop {
+    width: 85%;
+    position: relative;
+    max-width: 1200px;  /* line up with product gird */
+    padding: 8px 0;
+    margin: 0 auto;
+}
+
+#navLogo {
+    width: 16.66%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#navLogo img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+#navRight {
+    position: absolute;
+    right: 0; /* now due to that sapce reduction to match grid words can hang soild right */
+    top: 30%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+}
+#language:hover {
+    color: black;
+}
+
+#navRight img {
+    width: 35px;
+    height: auto;
+    display: block;
+    transition: transform 0.2s;
+}
+
+/* Hover affect for img*/
+#navRight a:hover img {
+    transform: scale(1.15);
+}
+
+/* bottom portion of nav */
+#navLinks {
+    width: 100%;
+    text-align: center;
+    padding: 16px 0 0 0;
+}
+
+#navLinks a {
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0 8px;
+    color: rgb(0, 153, 255);
+}
+
+#navLinks:has(a:hover) a {
+    color: rgb(79, 188, 252);
+}
+
+#navLinks:has(a:hover) a:hover {
+    color: rgb(0, 153, 255);
+}
+
+/* --------------------------------------BANNER  */
+#banner {
+    width: 100%;
+}
+
+#banner img {
+    width: 100%;
+    max-height: 412px;
+    display: block;
+}
+#banner .summerSmall {
+    display: none;
+}
+
+/* TEXT BANNER */
+#textBanner {
+    width: 100%;
+    background-color: cornflowerblue;
+    overflow: hidden;
+    padding: 9px 0;
+}
+
+#textBanner p {
+    color: rgb(236, 172, 53);
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: bold;
+}
+
+
+
+/* -------------------------------------PRODUCTS WITH GRID */
+
+#products {
+    width: 85%;
+    margin: 40px auto;
+    max-width: 1200px;
+    color: rgb(0, 153, 255);
+}
+
+#productsHeading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#productsHeading h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+#productsHeading a {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(0, 153, 255);
+}
+
+.productInfo {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.productInfo p {
+    margin: 0 0 4px;
+}
+
+/* Grid reponse layout*/
+#productsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 8px;
+}
+
+.product {
+    min-width: 0;
+}
+
+/* border and visibilty flip for product images */
+.productImage {
+    width: 100%;
+    position: relative;
+    border: 1px solid rgb(0, 153, 255);
+}
+
+.productImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.productImage .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: none;
+}
+
+.productImage:hover .front {
+    visibility: hidden;
+}
+
+.productImage:hover .back {
+    display: block;
+}
+
+
+/* -------------------------------------- FOOTER */
+
+footer {
+    width: 100%;
+    border-top: 1px solid rgb(0, 153, 255);
+    color: rgb(0, 153, 255);
+}
+
+#footerSubscribe {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/*footer text */
+#footerText h2 {
+    font-size: 30px;
+    margin: 0 0 5px;
+}
+
+#footerText p {
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+}
+/*footer form*/
+#form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#form input {
+    flex: 1;
+    min-width: 0;
+    padding: 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+}
+
+#form a {
+    padding: 15px 25px;
+    background-color: rgb(0, 153, 255);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*footer bottom*/
+
+#footerBottom {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid rgb(0, 153, 255);
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#footerBottom p {
+    font-size: 12px;
+    margin: 0;
+    color: rgb(115, 194, 247);
+}
+
+#footerBottom a {
+    color: rgb(115, 194, 247);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#footerBottom a:first-of-type {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#instagram img {
+    width: 20px;
+    height: auto;
+    display: block;
+}
+
+/* -------------------------------------------- FLOATING SIGN UP */
+
+#signUp {
+    position: fixed;
+    bottom: 20px;
+    left: 12px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: rgb(0, 153, 255);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 20;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  *******OUT-OF-JAM.HTML CSS SPECIFIC SECTION********  */
+
+
+/* --------------------------------- Jam Product*/
+
+#jamProduct {
+    width: 85%;
+    max-width: 1200px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 35px;
+    align-items: start;
+}
+
+#jamGallery {
+    min-width: 0;
+}
+
+#jamGallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*jam text section */
+
+#jamText {
+    min-width: 0;
+    color: rgb(0, 153, 255);
+}
+
+#jamText h1 {
+    font-size: 28px;
+    margin: 0 0 15px;
+}
+
+/* keep 野餐籃禮盒 intack*/
+#jamText h1 span {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+#jamPrice {
+    font-size: 14px;
+    margin: 0 0 30px;
+}
+
+#jamText hr {
+    border: none;
+    border-top: 1px solid rgb(0, 153, 255);
+    margin: 0;
+}
+
+/*jam text below hr line*/
+
+/* Flavor of Jam */
+
+#jamOption {
+    margin-top: 25px;
+}
+
+#jamOption p {
+    font-size: 13px;
+    margin: 0 0 10px;
+}
+
+#jamChoice {
+    display: flex;
+    gap: 10px;
+}
+
+#jamChoice button {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 5px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#jamChoice .selected {
+    background-color: cornflowerblue;
+    color: white;
+    border-color: cornflowerblue;
+}
+
+
+/* Cart and amount */
+
+#jamBuy {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+#jamAmount {
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+}
+
+#jamAmount button {
+    background: none;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#jamAmount span {
+    font-size: 14px;
+    color: black;
+}
+
+#jamCart {
+    flex: 1;
+    min-width: 0;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* Jam box git inforamtion */
+
+#jamInfo {
+    margin-top: 26px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+#jamInfo p {
+    margin: 0 0 15px;
+}
+
+#jamInfo a {
+    color: rgb(0, 153, 255);
+    text-decoration: none;
+}
+
+#jamInfo ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+
+/* ----------------------------------------------- JAM BANNER */
+
+#jamBanner {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+#jamBanner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------------------------------- JAM WORDS */
+
+.jamWords {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 140px 0;
+    text-align: center;
+    color: rgb(0, 153, 255);
+}
+
+.jamWords h2 {
+    font-size: 48px;
+    margin: 0 0 25px;
+}
+
+.jamWords p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0 auto 18px;
+}
+
+/* ---------------------------- JAM PHOTOS */
+
+#jamPhotos {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+#jamPhotos img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* --------------------------------------- JAM FAQ */
+
+#jamFAQ {
+    width: 85%;
+    max-width: 1200px;
+    margin: 70px auto;
+    color: rgb(0, 153, 255);
+}
+
+#jamFAQ h2 {
+    font-size: 30px;
+    margin: 0 0 20px;
+}
+
+/* Each question fall under thier own faqItem */
+.faqItem {
+    border-top: 1px solid rgb(0, 153, 255);
+}
+
+/* Bottom border of last faqItem */
+.faqItem:last-child {
+    border-bottom: 1px solid rgb(0, 153, 255);
+}
+
+/* Question row */
+.faqQuestion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: none;
+    border: none;
+    padding: 15px 0;
+
+    color: rgb(0, 153, 255);
+    font-size: 14px;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Answer section */
+.faqAnswer {
+    font-size: 13px;
+    line-height: 1.7;
+    padding-bottom: 12px;
+}
+
+.faqAnswer p {
+    margin: 0 0 12px;
+}
+
+.faqAnswer p:last-child {
+    margin-bottom: 0;
+}
+
+/* Creating arrow pointing up */
+.faqArrow {
+    width: 7px;
+    height: 7px;
+
+    border-right: 1.5px solid rgb(0, 153, 255);
+    border-bottom: 1.5px solid rgb(0, 153, 255);
+
+    transform: rotate(-135deg);
+    margin-right: 4px;
+    flex-shrink: 0;
+}
+
+/* Color hover change for faqQuestion and faqArrow */
+.faqQuestion:hover {
+    color: black;
+}
+.faqQuestion:hover .faqArrow {
+    border-color: black;
+}
+
+/* Prepping for JS code But not in HTML currently BELOW */
+/* Closed FAQ item */
+.faqItem.closed .faqAnswer {
+    display: none;
+}
+
+/* Turn arrow down when closed */
+.faqItem.closed .faqArrow {
+    transform: rotate(45deg);
+}
+/* Prepping for JS code But not in HTML currently ABOVE*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ******************************LINK.HTML STYLES*********************** */
+
+.linkPage{
+	background-color: lightslategray;
+	font-family: OpenSansRegular;
+	text-align: center;
+}
+
+.linkBox{
+	width: 500px;
+	margin: 100px auto;
+	padding: 30px;
+	background-color: white;
+	border: 1px solid #cccccc;
+}
+
+.linkBox h1{
+	font-size: 32px;
+}
+
+.linkBox h2,
+#headerExplanation h2 {
+	font-size: 22px;
+    text-decoration: underline;
+}
+
+.linkBox p,
+#headerExplanation p {
+	font-size: 15px;
+	line-height: 1.6;
+}
+#linkButtons{
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 14px;
+}
+/* Buttons */
+
+#linkButtons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.linkButton {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: rgb(0, 153, 255);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.linkButton:hover {
+    background-color: cornflowerblue;
+}
+
+
+/* Explaing Hedaer NAV */
+
+#headerExplanation {
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+.linkExample {
+    margin-top: 40px;
+}
+
+/* Matching the actual header text link */
+.headerTextLink {
+    color: rgb(0, 153, 255);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.headerTextLink:hover {
+    color: rgb(79, 188, 252);
+}
+
+/* Matching the actual header logo */
+.headerLogoLink img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------RESPONSIVE SETTINGS ----------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    #navLogo {
+        width: 33.33%;
+    }
+
+    #navLogo img {
+        width: 130px;
+    }
+    
+    #language {
+        display: none;
+    }
+
+    #navRight {
+        right: 0;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+
+    #navLinks {
+        padding: 8px 12px;
+        box-sizing: border-box;
+    }
+
+    #navLinks a {
+        display: inline-block;
+        font-size: 10px;
+        margin: 5px 4px;
+    }
+
+    /* Banner section */
+
+    #banner .summerBig {
+        display: none;
+    }
+
+    #banner .summerSmall {
+        display: block;
+    }
+
+
+
+    /* PRODUCT GRID */
+    #productsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer */
+
+    #footerSubscribe {
+        width: 94%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    #form {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #form input {
+        width: 100%;
+        box-sizing: border-box;
+        flex: none;
+    }
+
+    #form a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #footerBottom {
+        width: 94%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    /*Terms and polices fix*/
+    #footerBottom a:first-of-type {
+        position: static;
+        transform: none;
+    }
+}
+
+/* ----------Jam Product Responsive section (PAGE 2)-------------- */
+@media screen and (max-width: 750px) {
+
+    #jamProduct {
+        width: 94%;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 18px;
+    }
+
+    #jamBanner {
+        width: 94%;
+    }
+
+    #jamPhotos {
+        width: 94%;
+    }
+
+    #jamFAQ {
+        width: 94%;
+    }
+
+}
+
+
+@media screen and (max-width: 620px) {
+
+    #jamProduct {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+}
