@@ -48,8 +48,14 @@
 
                 <!-- Left side -->
                 <div id="jamGallery">
-                    <img id="jamMainImage" src="images/jam.png"
-                        alt="Out of the Jam Gift Box">
+                    <!-- Mini thumbnails on side -->
+                    <div id="jamThumbnails"></div>
+
+                    <!-- Mainphoto -->
+                    <div id="jamMain"></div>
+                        <img id="jamMainImage" src="images/jam.png"
+                            alt="Out of the Jam Gift Box">
+                    </div>
                 </div>
 
                 <!-- Right side -->
@@ -326,7 +332,6 @@
                             <img class="front" src="images/front7.png" alt="Pink Jelly Cup">
                             <img class="back" src="images/back7.jpg" alt="Pink Jelly Cup">
                         </div>
-
                         <div class="productInfo">
                             <p>Why Why Coffee Jelly Cup Tumbler (Pink)</p>
                             <p>$980.00</p>
@@ -381,9 +386,12 @@
 
         </footer>
         <!-- Sign Up! Button -->
-        <a href="link.html" id="signUp">
-            SIGN UP!
-        </a>
+        <div id="signUpBox">
+            <a href="link.html" id="signUp">
+                SIGN UP!
+            </a>
+            <button type="button" id="close">x</button>
+        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="scripts/scripts.js"></script>

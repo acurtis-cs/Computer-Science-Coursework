@@ -33,6 +33,15 @@ if (homeNav) {
 }
 
 
+
+
+
+
+
+
+
+
+
 // Homepage below banner revolving text
 
 const beansBanner = document.querySelector(".homePage #textBanner p");
@@ -51,6 +60,13 @@ if (beansBanner) {
     beansBanner.appendChild(original);
     beansBanner.appendChild(duplicate);
 }
+
+
+
+
+
+
+
 
 
 
@@ -163,3 +179,151 @@ productGalleries.forEach(function(gallery) {
     });
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+// OUT OF THE JAM MAIN IMAGE GALLERY
+
+const jamGallery = document.querySelector("#jamGallery");
+
+if (jamGallery) {
+
+    // Photos in right  order
+    const jamPhotos = [
+        "images/jam.png",
+        "images/jam1.webp",
+        "images/jam2.webp",
+        "images/jam3.webp",
+        "images/jam4.webp",
+        "images/jam5.webp"
+    ];
+
+    const mainImage = document.querySelector("#jamMainImage");
+    const thumbnails = document.querySelector("#jamThumbnails");
+    const prevArrow = document.querySelector("#jamPrev");
+    const nextArrow = document.querySelector("#jamNext");
+    let currentImage = 0;
+
+    // ShoW the image seledted
+    function showJamImage(index) {
+
+        currentImage = index;
+        mainImage.src = jamPhotos[currentImage];
+
+        // Update selected thumbnail border color
+        const allThumbnails = thumbnails.querySelectorAll(".jamThumb");
+        // ADD and Remove rules
+        allThumbnails.forEach(function(thumb, number) {
+            if (number === currentImage) {
+                thumb.classList.add("selected");
+            } else {
+                thumb.classList.remove("selected");
+            }
+        });
+    }
+
+    // Creating each thumbnail
+    jamPhotos.forEach(function(photo, index) {
+
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "jamThumb";
+        button.setAttribute("aria-label", "View product photo " + (index + 1));
+
+        const image = document.createElement("img");
+        image.src = photo;
+        image.alt = "Product photo " + (index + 1);
+
+        button.appendChild(image);
+        thumbnails.appendChild(button);
+        // Change image when thumbnail is clicked
+        button.addEventListener("click", function() {
+            showJamImage(index);
+        });
+    });
+  
+    // Insure the first image on page is displayted
+    showJamImage(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CLOSE SIGN UP BUTTON
+
+const closeSignUp = document.querySelector("#close");
+
+if (closeSignUp) {
+    closeSignUp.addEventListener("click", function() {
+        document.querySelector("#signUpBox").style.display = "none";
+    });
+}
+
+
+
+
+
+
+
+// OUT OF THE JAM (JAM SELCETION) INDICATOR
+const jamOptionButtons = document.querySelectorAll("#jamChoice button");
+
+jamOptionButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+
+        // Remove selected class from both buttons
+        jamOptionButtons.forEach(function(option) {
+            option.classList.remove("selected");
+        });
+        // Add selected class to clicked button
+        button.classList.add("selected");
+    });
+});
+
+
+
+
+
+// OUT OF THE JAM CART NUMBER
+
+const jamAmount = document.querySelector("#jamAmount");
+if (jamAmount) {
+
+    const buttons = jamAmount.querySelectorAll("button");
+    const number = jamAmount.querySelector("span");
+    let quantity = 1;
+
+    // Minus button STOPS at -1 (pay me)
+    buttons[0].addEventListener("click", function() {
+        if (quantity > -1) {
+            quantity--;
+            number.textContent = quantity;
+        }
+    });
+    // Plus button STOPS at 7
+    buttons[1].addEventListener("click", function() {
+        if (quantity < 7) {
+            quantity++;
+            number.textContent = quantity;
+        }
+    });
+}

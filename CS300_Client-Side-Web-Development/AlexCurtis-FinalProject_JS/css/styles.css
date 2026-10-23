@@ -444,10 +444,41 @@ footer {
 
 /* -------------------------------------------- FLOATING SIGN UP */
 
-#signUp {
+
+/***888 JavaScript Feature to close sign up code ----below-- *********/
+#signUpBox {
     position: fixed;
     bottom: 20px;
     left: 12px;
+    width: 85px;
+    height: 85px;
+    z-index: 20;
+}
+
+/* yellow close button */
+#close {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+
+    width: 22px;
+    height: 22px;
+
+    background-color: yellow;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+/***888 JavaScript Feature to close sign up code ----above-- *********/
+
+
+#signUp {
+   /* deleted postioning here because now inside signUPBox */
     width: 85px;
     height: 85px;
     border-radius: 50%;
@@ -512,6 +543,69 @@ footer {
     display: block;
 }
 
+/********* Code for JavaScript feature for jamGallary ******************/
+/* -------------------------------- JAM MAIN IMAGE GALLERY */
+
+#jamGallery {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+/* thumbnails */
+#jamThumbnails {
+    width: 55px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Thumbnail buttons */
+.jamThumb {
+    width: 100%;
+    padding: 2px;
+    background: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+/* Thumbnail photos */
+.jamThumb img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    display: block;
+}
+
+/* Selected thumbnail */
+.jamThumb.selected {
+    border-color: rgb(0, 153, 255);
+}
+
+/* Main image area */
+#jamMain {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+}
+
+/* Large product image */
+#jamMainImage {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    display: block;
+}
+
+
+/********* Code for JavaScript feature for jamGallary  ----ABOVE---  ******************/
+
+/*regular CSS code below*/
 /*jam text section */
 
 #jamText {
@@ -1006,6 +1100,7 @@ footer {
         transform: none;
     }
 }
+
 
 /* ----------Jam Product Responsive section (PAGE 2)-------------- */
 @media screen and (max-width: 750px) {
